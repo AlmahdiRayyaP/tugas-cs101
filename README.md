@@ -1,2 +1,2 @@
 # tugas-cs101
-b
+Jammie dan Rayya
