@@ -2,9 +2,8 @@ print("------------")
 print("Calculator")
 print("")
 
-Operation= input("Insert a math operation (+, -, :, x)= ")
-# pilih operasi yg mana
-
+Operation= str(input("Insert a math operation (+, -, x, :)= "))
+# pilih operasi
 
 #Jumlah
 if Operation == "+":
@@ -12,21 +11,27 @@ if Operation == "+":
     secondnumber= int(input('Insert second number: '))
     Result= firstnumber+secondnumber
 
+#Kurang
+elif Operation == "-":
+    firstnumber= int(input('Insert first number: '))
+    secondnumber= int(input('Insert second number: '))
+    Result= firstnumber-secondnumber
 
 #Kali
-if Operation == "x":
-    firstnumber= int(input('Insert first number: '))
-    secondnumber= int(input('Insert second number: '))
-    Result= firstnumber*secondnumber
-if Operation == "X":
+elif (Operation == "x" or Operation == "X"):
     firstnumber= int(input('Insert first number: '))
     secondnumber= int(input('Insert second number: '))
     Result= firstnumber*secondnumber
 
+#Bagi
+if Operation == ":":
+    firstnumber= int(input('Insert first number: '))
+    secondnumber= int(input('Insert second number: '))
+    Result= firstnumber/secondnumber
 
-#hasil
+#Hasil
 print("")
-print ("The result of", (f"{firstnumber}{Operation}{secondnumber}"), "is", Result)
+print ("The result of", str(firstnumber)+(Operation)+str(secondnumber), "is", str(Result))
 print("------------")
 
 # james dan rayya
